@@ -31,7 +31,7 @@ def binary_search(target_value, arr):
         guess = int((lower_limit + higher_limit) / 2)
         if arr[guess] == target_value:
             return guess
-        elif arr[guess] < target_value:
+        if arr[guess] < target_value:
             lower_limit = guess + 1
         else:
             higher_limit = guess - 1
